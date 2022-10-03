@@ -1,1 +1,102 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: "roboto";
+    src: url('Roboto/Roboto-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root {
+    --cor1: rgb(187, 169, 137);
+    --cor2: rgb(166, 104, 90);
+    --cor3: rgb(89, 112, 94);
+    --cor4: rgb(140, 149, 130);
+
+    --cor5: rgb(255, 255, 255);
+    --cor6: rgba(153, 153, 153, 0.259);
+    --cor7: rgb(0, 0, 0);
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque: 'roboto', cursive;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    background-image: url(imagens/IMG_1526.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: right;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+main {
+    background-image: linear-gradient(to left, var(--cor1),var(--cor6));
+    padding-top: .5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+main > article {
+    background-color: var(--cor6);
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+main img {
+    padding: 5px;
+    background-color: var(--cor3);
+    border-radius: 10px;
+   
+}
+
+body {
+    /* 
+    
+    background-color: var(--cor5);
+    background-image: url(imagens/IMG_4799.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--font-destaque);
+
+    */
+
+    background: var(--cor5) url(imagens/IMG_4799.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+nav {
+    background-color: var(--cor1);
+    border-radius: 5px;
+    font-size: medium;
+    padding: 5px;
+    margin: 3px;
+    box-shadow: 5px;
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    color: var(--cor7);
+}
+
+
+
+
+
